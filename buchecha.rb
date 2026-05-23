@@ -5,21 +5,21 @@
 class Buchecha < Formula
   desc "Behavior-driven Coding Cycle for autonomous agent loops."
   homepage "https://github.com/fgmacedo/buchecha"
-  version "0.0.5"
+  version "0.0.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fgmacedo/buchecha/releases/download/v0.0.5/bcc_0.0.5_darwin_amd64.tar.gz"
-      sha256 "194cf77f44a3e009e92e15ca47f2a62fb977572484aa526cb373b785a31ca016"
+      url "https://github.com/fgmacedo/buchecha/releases/download/v0.0.6/bcc_0.0.6_darwin_amd64.tar.gz"
+      sha256 "8d3c2a19c70fdd7329db6ed9e59533f567490844c3621ed50ca2f9d8d9a07a9f"
 
       define_method(:install) do
         bin.install "bcc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fgmacedo/buchecha/releases/download/v0.0.5/bcc_0.0.5_darwin_arm64.tar.gz"
-      sha256 "e6078b7935053c2e120f4d027610efc303675465382069bb78dd0e0428724482"
+      url "https://github.com/fgmacedo/buchecha/releases/download/v0.0.6/bcc_0.0.6_darwin_arm64.tar.gz"
+      sha256 "48d7d7c2baf5ac4c57b1040d21d996efa74847dd75d1c8e623cc1c9fda12fc95"
 
       define_method(:install) do
         bin.install "bcc"
@@ -29,15 +29,15 @@ class Buchecha < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fgmacedo/buchecha/releases/download/v0.0.5/bcc_0.0.5_linux_amd64.tar.gz"
-      sha256 "8e044ce5c24642bfb38279a3b8bc6830add58b50d10a25303ec89610d8153af5"
+      url "https://github.com/fgmacedo/buchecha/releases/download/v0.0.6/bcc_0.0.6_linux_amd64.tar.gz"
+      sha256 "915a912dfe812411557a5709be2f2f94d5edfd70c645f2a96e8043e49e3343a4"
       define_method(:install) do
         bin.install "bcc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fgmacedo/buchecha/releases/download/v0.0.5/bcc_0.0.5_linux_arm64.tar.gz"
-      sha256 "915c64f2c9b80069148b8229b6df15e43d5ea411fd516ae9dba7a7d20ceff1b4"
+      url "https://github.com/fgmacedo/buchecha/releases/download/v0.0.6/bcc_0.0.6_linux_arm64.tar.gz"
+      sha256 "ce2eb8bd732601825f496b02c5c734fcc399878cf147636329c9086e2f1875cb"
       define_method(:install) do
         bin.install "bcc"
       end
